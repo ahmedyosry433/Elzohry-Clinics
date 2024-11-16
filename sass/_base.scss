@@ -1,0 +1,32 @@
+:root {
+    --primary-color:#C0C0C0;
+;
+    --light-primary-color: #e3e0e0;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; 
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+    font-weight: 400;
+    direction: rtl;
+}
