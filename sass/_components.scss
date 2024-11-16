@@ -1,0 +1,14 @@
+.resize {
+    width: 7rem;
+}
+
+.main-btn {
+    transition: all 0.7s ease;
+    &:hover {
+        background-color: white;
+        color: var(--primary-color) !important;
+    }
+}
+.active {
+    color: white !important;
+}
