@@ -12,3 +12,8 @@
 .active {
     color: white !important;
 }
+.quick-link {
+    &:hover {
+        color: var(--light-primary-color)!important;
+    }
+}
