@@ -7,4 +7,6 @@ allNav.forEach(function(ele){
         });
         this.classList.add('active');
    }
- });
+});
+ 
+

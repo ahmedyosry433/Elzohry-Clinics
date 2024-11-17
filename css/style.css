@@ -73,23 +73,70 @@
   100% {
     transform: translateY(1.5); } }
 
-main {
+.who-we {
   height: 100vh; }
 
 .resize {
-  width: 7rem; }
+  width: 8rem; }
 
 .main-btn {
-  transition: all 0.7s ease; }
+  transition: all 0.7s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
   .main-btn:hover {
     background-color: white;
     color: var(--primary-color) !important; }
+  .main-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: width 0.3s ease;
+    z-index: -1; }
+  .main-btn:hover::before {
+    width: 100%; }
 
 .active {
   color: white !important; }
 
 .quick-link:hover {
   color: var(--light-primary-color) !important; }
+
+/* Menu Items Hover Effect */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.5s ease; }
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.5s ease; }
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; }
+
+/* Active link style */
+.navbar-nav .nav-link.active::after {
+  background-color: white;
+  color: white;
+  width: 100%; }
+
+.carousel-item {
+  height: 70rem; }
+
+.img-slide {
+  object-fit: fill;
+  height: 100%;
+  width: 100%; }
 
 :root {
   --primary-color:#0d6efd;
