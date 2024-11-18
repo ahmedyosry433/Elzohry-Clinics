@@ -138,6 +138,21 @@
   height: 100%;
   width: 100%; }
 
+.initial-image {
+  transition: all 1s ease-in-out; }
+
+.hidden-image {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s ease-in-out; }
+
+.show {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  transition: all 1s ease-in-out; }
+
 .review-card {
   max-width: 50rem;
   transition: transform 0.4s ease-in-out; }
@@ -147,6 +162,30 @@
 .avatar {
   width: 4.5rem;
   height: 4.5rem; }
+
+.appointment-form-container {
+  max-width: 60rem; }
+
+.form-input {
+  border: 1px solid #cfdeee;
+  transition: border-color 0.2s;
+  text-align: right; }
+  .form-input:focus {
+    outline: none;
+    border: 1px solid #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1); }
+
+.form-textarea {
+  min-height: 9rem;
+  resize: vertical; }
+
+.form-submit {
+  background-color: #4a90e2;
+  cursor: pointer;
+  transition: background-color 0.2s; }
+
+.form-submit:hover {
+  background-color: #357abd; }
 
 :root {
   --primary-color:#0d6efd;
