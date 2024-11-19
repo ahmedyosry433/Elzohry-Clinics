@@ -87,7 +87,7 @@
                     </li>
                 </ul>
                 <a type="button" href="#appointment"
-                    class=" btn main-btn rounded fs-4 text-light border border-light ps-5 pe-5 ">احجز
+                    class=" btn main-btn rounded fs-4 text-light border border-light ps-5 pe-5 d-none d-lg-block">احجز
                     الان</a>
             </div>
         </div>
@@ -123,14 +123,18 @@
         </section>
         <!-- End Slider -->
         <!-- Start WHo We -->
-        <section class="who-we"></section>
+        <section class="pt-5 mt-5 mb-5 pb-5 "></section>
         <!-- End WHo We -->
         <!-- Start Services§ -->
-        <section id="services">
-            <div class="services-container p-4  ">
-                <h1 class="main-title text-center text-dark fw-semibold mb-3 fs-2">خدماتنا الطبية</h1>
-                <p class="subtitle text-center text-black-50 mb-4 fs-5 fw-normal">رعاية أسنان متميزة بمعايير
-                    عالمية</p>
+        <section class="pt-5 mt-5 mb-5 pb-5 " id="services">
+            <div class="services-container">
+                <div class="title mb-5 pb-5 mt-5">
+                    <h1 class="main-title text-center text-dark fw-semibold mb-3 fs-2 ">خدماتنا الطبية</h1>
+                    <p class="subtitle text-center text-black-50 mb-5 fs-5 fw-normal"> نوفر مجموعة متكاملة من خدمات طب
+                        الأسنان لضمان راحتكم وصحة ابتسامتكم، باستخدام أحدث التقنيات وأعلى معايير الجودة.
+                        عالمية</p>
+                </div>
+
                 <div class="container">
                     <div class="row" id="servicesGrid">
                         <!-- implementation her using JS -->
@@ -140,7 +144,15 @@
         </section>
         <!-- End Services§ -->
         <!-- Start Our Work -->
-        <div class="our-work text-center pt-5 pb-5" id="our-work">
+        <div class="our-work text-center pt-5 mt-5 mb-5 pb-5 " id="our-work">
+            <div class="title mb-5 pb-5 mt-5">
+
+                <h1 class="main-title text-center text-dark fw-semibold mb-3 fs-2"> حالاتنا</h1>
+                <p class="subtitle text-center text-black-50 mb-4 fs-5 fw-normal"> نفخر بنجاحنا في علاج العديد من
+                    الحالات
+                    وتحقيق أفضل النتائج، هدفنا دائمًا هو منح مرضانا الابتسامة التي يستحقونها
+                </p>
+            </div>
             <div class="container">
 
                 <div class="row pt-5 cases">
@@ -189,11 +201,50 @@
         </div>
         <!-- End Our Work -->
         <!-- Start Rate -->
-        <section id="rate">
+        <section class="pt-5 mt-5 mb-5 pb-5 " id="rate">
+            <div class="title mb-5 pb-5 mt-5">
+                <h1 class="main-title text-center text-dark fw-semibold mb-3 fs-2"> تقيماتنا</h1>
+                <p class="subtitle text-center text-black-50 mb-4 fs-5 fw-normal"> نسعد بثقتكم ورضاكم عن خدماتنا، رأيكم
+                    يهمنا لأنه يساعدنا على تقديم الأفضل دائمًا، شكراً لدعمكم!
+                    عالمية</p>
+            </div>
+
             <div class="container">
                 <div class="row review">
                     <div class="col-md-4 col-lg-3 initial-image">
-                        <div class="review-card bg-white rounded p-4 m-4 shadow">
+                        <div class="review-card bg-white rounded-5 p-4 m-4 shadow">
+                            <div class="review-header d-flex align-items-center mb-4">
+                                <div
+                                    class="avatar bg-info text-light d-flex align-items-center justify-content-center fw-bold ms-2 rounded-5 -circle">
+                                    JD</div>
+                                <div class="review-info mt-4 me-3 flex-grow-1">
+                                    <h3 class="reviewer-name fs-4 fw-bold mb-1 text-black">John Doe</h3>
+                                    <p class="review-date fs-5 text-black-50">October 15, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="rating d-flex mt-3 mb-3 gap-1">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+
+                            <p class="review-text fs-4 text-secondary">
+                                Exceptional service from start to finish! The attention to detail and professional
+                                approach exceeded my expectations.
+                                The team was responsive, knowledgeable, and delivered outstanding results. I highly
+                                recommend their services to anyone
+                                looking for quality and reliability.
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 initial-image">
+                        <div class="review-card bg-white rounded-5 p-4 m-4 shadow">
                             <div class="review-header d-flex align-items-center mb-4">
                                 <div
                                     class="avatar bg-info text-light d-flex align-items-center justify-content-center fw-bold ms-2 rounded-circle">
@@ -225,7 +276,7 @@
                     </div>
 
                     <div class="col-md-4 col-lg-3 initial-image">
-                        <div class="review-card bg-white rounded p-4 m-4 shadow">
+                        <div class="review-card bg-white rounded-5 p-4 m-4 shadow">
                             <div class="review-header d-flex align-items-center mb-4">
                                 <div
                                     class="avatar bg-info text-light d-flex align-items-center justify-content-center fw-bold ms-2 rounded-circle">
@@ -257,39 +308,7 @@
                     </div>
 
                     <div class="col-md-4 col-lg-3 initial-image">
-                        <div class="review-card bg-white rounded p-4 m-4 shadow">
-                            <div class="review-header d-flex align-items-center mb-4">
-                                <div
-                                    class="avatar bg-info text-light d-flex align-items-center justify-content-center fw-bold ms-2 rounded-circle">
-                                    JD</div>
-                                <div class="review-info mt-4 me-3 flex-grow-1">
-                                    <h3 class="reviewer-name fs-4 fw-bold mb-1 text-black">John Doe</h3>
-                                    <p class="review-date fs-5 text-black-50">October 15, 2023</p>
-                                </div>
-                            </div>
-
-                            <div class="rating d-flex mt-3 mb-3 gap-1">
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                                <span class="star">★</span>
-                            </div>
-
-                            <p class="review-text fs-4 text-secondary">
-                                Exceptional service from start to finish! The attention to detail and professional
-                                approach exceeded my expectations.
-                                The team was responsive, knowledgeable, and delivered outstanding results. I highly
-                                recommend their services to anyone
-                                looking for quality and reliability.
-                            </p>
-
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-lg-3 initial-image">
-                        <div class="review-card bg-white rounded p-4 m-4 shadow">
+                        <div class="review-card bg-white rounded-5 p-4 m-4 shadow">
                             <div class="review-header d-flex align-items-center mb-4">
                                 <div
                                     class="avatar bg-info text-light d-flex align-items-center justify-content-center fw-bold ms-2 rounded-circle">
@@ -320,7 +339,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3 hidden-image">
-                        <div class="review-card bg-white rounded p-4 m-4 shadow">
+                        <div class="review-card bg-white rounded-5 p-4 m-4 shadow">
                             <div class="review-header d-flex align-items-center mb-4">
                                 <div
                                     class="avatar bg-info text-light d-flex align-items-center justify-content-center fw-bold ms-2 rounded-circle">
@@ -360,18 +379,19 @@
         </section>
         <!-- End Rate -->
         <!-- Start Appointment -->
-        <section class="mt-5 mb-5 " id="appointment">
+        <section class="pt-5 mt-5 mb-5 pb-5 " id="appointment">
+            <div class="title mb-5 pb-5 mt-5">
+
+                <h1 class="main-title text-center text-dark fw-semibold mb-3 fs-2"> حجز موعد</h1>
+                <p class="subtitle text-center text-black-50 mb-4 fs-5 fw-normal">
+                    يرجى ملء النموذج أدناه وسنتواصل معك قريباً
+                </p>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-lg-4 ms-lg-5">
 
-                        <div class="appointment-form-container rounded shadow bg-white p-5">
-                            <div class="form-header text-center mb-3">
-                                <h2 class="form-title fs-3 mb-3 text-black">حجز موعد</h2>
-                                <p class="form-subtitle text-black-50 fs-5">يرجى ملء النموذج أدناه وسنتواصل معك قريباً
-                                </p>
-                            </div>
-
+                        <div class="appointment-form-container rounded-5 shadow bg-white p-5">
                             <form id="appointmentForm" onsubmit="return false;">
 
                                 <div class="form-group mb-4 ">
@@ -418,14 +438,14 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-7 align-baseline">
+                    <div class="col-md-8 col-lg-7 ">
                         <div class="branches-container d-flex gap-3 flex-wrap">
 
-                            <div class="col-sm-12 col-md-4 col-lg-5">
+                            <div class="col-sm-12 col-md-4 col-lg-6">
                                 <!-- First Branch -->
                                 <div class="branch-card">
                                     <div class="branch-header">
-                                        <h2 class="branch-name">فرع الرياض</h2>
+                                        <h2 class="branch-name">فرع الحي الثامن – مدينة نصر</h2>
                                     </div>
                                     <div class="contact-info">
                                         <a href="tel:+966123456789" class="action-link">
@@ -433,7 +453,7 @@
                                                 <div class="info-icon phone-icon">📞</div>
                                                 <div class="info-content">
                                                     <div class="info-label">اتصل بنا</div>
-                                                    <div class="info-value">+966 12 345 6789</div>
+                                                    <div class="info-value">201234455677+</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -454,7 +474,8 @@
                                                 <div class="info-icon location-icon">📍</div>
                                                 <div class="info-content">
                                                     <div class="info-label">موقعنا</div>
-                                                    <div class="info-value">حي الملقا، طريق الملك فهد</div>
+                                                    <div class="info-value">13 عمارات بنك التعمير والإسكان أعلى ركن
+                                                        الحفلات، شارع حسن المأمون (شارع النادي الأهلي)</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -466,7 +487,7 @@
                                 <!-- Second Branch -->
                                 <div class="branch-card">
                                     <div class="branch-header">
-                                        <h2 class="branch-name">فرع جدة</h2>
+                                        <h2 class="branch-name"> فرع مكرم عبيد - مدينة نصر</h2>
                                     </div>
                                     <div class="contact-info">
                                         <a href="tel:+966123456788" class="action-link">
@@ -474,7 +495,7 @@
                                                 <div class="info-icon phone-icon">📞</div>
                                                 <div class="info-content">
                                                     <div class="info-label">اتصل بنا</div>
-                                                    <div class="info-value">+966 12 345 6788</div>
+                                                    <div class="info-value">2010111129991+</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -495,7 +516,8 @@
                                                 <div class="info-icon location-icon">📍</div>
                                                 <div class="info-content">
                                                     <div class="info-label">موقعنا</div>
-                                                    <div class="info-value">حي الروضة، طريق الملك</div>
+                                                    <div class="info-value">1 شارع مكرم عبيد – برج سيتي لايت – أعلى بنك
+                                                        القاهرة، الدور الثامن</div>
                                                 </div>
                                             </div>
                                         </a>
@@ -568,7 +590,7 @@
                             <h5 class="text-black fs-2 fw-bold">اتصل بنا</h5>
 
                             <ul class=" mt-5 list-unstyled fs-4">
-                                <li><a class="quick-link text-decoration-none text-light" target="_blank" href=""><i
+                                <li class="hov"><a class="quick-link text-decoration-none " target="_blank" href=""><i
                                             class="fa-solid fa-location-dot fs-2 text-black-50 "></i>&nbsp;
                                         13 عمارات بنك التعمير والإسكان أعلى ركن الحفلات، شارع حسن
                                         المأمون (شارع النادي الأهلي) – الحي الثامن – مدينة نصر.
