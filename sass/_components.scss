@@ -26,13 +26,27 @@
         width: 100%;
     }
 }
+.text-primary-color {
+    color: var(--primary-color);
+}
 .active {
     color: white !important;
 }
 .quick-link {
-    &:hover {
-        color: var(--light-primary-color)!important;
-    }
+    color: white;
+}
+
+
+.hov:hover .lin,
+.hov:hover .quick-link {
+    color: var(--primary-color) !important; /* Change to desired hover color */
+    transform: translateX(-5px) !important;
+    transition: all 0.3s ease; /* Smooth effect */
+}
+
+/* Navigation Bar */
+.navbar {
+    background: linear-gradient(135deg, #0891b2 0%, #0891b2 50%, var(--primary-color) 100%);
 }
 
 /* Menu Items Hover Effect */
@@ -346,3 +360,8 @@
 
 
 // End Appointment
+
+//Footer 
+.footer {
+    background: linear-gradient(135deg, #0891b2 0%, #41b2cdba 50%, #3e7fde 100%);
+}
