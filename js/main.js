@@ -12,52 +12,76 @@ allNav.forEach(function(ele){
 // Services
 const services = [
     {
-        icon: `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v7h-2zm0 9h2v2h-2z"/></svg>`,
-        title: 'فحص شامل',
-        description: 'فحص كامل للأسنان مع الأشعة السينية والاستشارة المهنية',
+        icon: `<img class ="img-fluid p-4" src="img/care.png">`,
+        title: 'تنضيف جير و تلميع ',
+        description: 'هو إجراء طبي وتجميلي يهدف إلى إزالة التراكمات الجيرية واستعادة لمعان الأسنان الطبيعي.',
         action: 'احجز موعداً',
         goTo:'#appointment'
     },
     {
-        icon: `<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8.5 14H9v-2.5L15.5 8H17v2.5L10.5 17zm-1-7h1v1h-1v-1z"/></svg>`,
-        title: 'حالات طارئة',
-        description: 'رعاية فورية للحالات الطارئة وعلاج الألم الشديد',
+        icon: `<img class ="img-fluid p-4" src="img/white.png">`,
+        title: 'تبييض اسنان ',
+        description: ' إجراء تجميلي يُستخدم لإزالة التصبغات واستعادة اللون الطبيعي أو تحسين بياض الأسنان باستخدام تقنيات متقدمة.',
         action: 'اتصل الآن',
         goTo:'tel:+201017394834'
     },
     {
-        icon: `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v7h-2zm0 9h2v2h-2z"/></svg>`,
-        title: 'تنظيف الأسنان',
-        description: 'تنظيف احترافي وتلميع مع العناية الوقائية الشاملة',
+        icon:`<img class ="img-fluid p-4" src="img/implant.png">`,
+        title: 'زراعه الأسنان ',
+        description: ' إجراء طبي لتعويض الأسنان المفقودة بزرعات دائمة مصنوعة من مواد متينة تُثبت في الفك لاستعادة الوظائف والمظهر الطبيعي.',
         action: 'احجز جلسة',
         goTo:'#appointment'
 
       
     },
     {
-        icon: `<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 7h3V9h-2V8h2V7h-3v7h3v-1h-2v-1h2v-1h-3zm-1-4h1v1h-1zm0 2h1v1h-1zm0 2h1v1h-1zm-7 2h3v1H4z"/></svg>`,
+        icon: `<img class ="img-fluid p-4" src="img/ta2wem.png">`,
         title: 'تقويم الأسنان',
-        description: 'تقويم تجميلي متطور لتصحيح تناسق الأسنان',
+        description: 'يُستخدم لتصحيح اعوجاج الأسنان ومشاكل الإطباق من خلال أجهزة ثابتة أو متحركة، لتحسين مظهر الأسنان ووظيفتها.',
         action: 'استشارة مجانية',
         goTo:'tel:+201017394834'
     },
     {
-        icon: `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v7h-2zm0 9h2v2h-2z"/></svg>`,
+        icon: `<img class ="img-fluid p-4" src="img/tagmil.png">`,
         title: 'تجميل الأسنان',
-        description: 'ابتسامة هوليود، تبييض، وتجميل متكامل',
+        description: ' مجموعة من الإجراءات الطبية والتجميلية تهدف إلى تحسين مظهر الأسنان والابتسامة، مثل ابتسامة هوليود، تبييض، وتجميل متكامل',
         action: 'احجز جلسة',
         goTo:'#appointment'
 
     },
     {
-        icon: `<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 7h3V9h-2V8h2V7h-3v7h3v-1h-2v-1h2v-1h-3zm-1-4h1v1h-1zm0 2h1v1h-1zm0 2h1v1h-1zm-7 2h3v1H4z"/></svg>`,
-        title: 'زراعة الأسنان',
-        description: 'زراعة أسنان دائمة بأحدث التقنيات العالمية',
+        icon: `<img class ="img-fluid p-4" src="img/tarkeb.png">`,
+        title: 'تركيبات الاسنان ثابته و متحركه ',
+        description: 'تركيبات الأسنان تشمل الثابتة لتعويض دائم والمتحركة لتعويض مرن وقابل للإزالة حسب حاجة المريض.',
         action: 'احجز الان',
         goTo:'#appointment'
-
+    
+    },
+    {
+        icon: `<img class ="img-fluid p-4" src="img/3sb.png">`,
+        title: 'علاج جزور الاسنان   ',
+        description: ' إجراء طبي يهدف إلى تنظيف وحشو قنوات جذور الأسنان المتضررة نتيجة التسوس أو الالتهابات للحفاظ عليها ومنع فقدانها.',
+        action: 'احجز الان',
+        goTo:'#appointment'
+    
+    },
+    {
+        icon: `<img class ="img-fluid p-4" src="img/74w.png">`,
+        title: 'حشوات تجميليه',
+        description: ' إصلاح تجاويف الأسنان أو الشقوق باستخدام مواد عالية الجودة تُطابق لون الأسنان الطبيعي، مع الحفاظ على شكلها ووظيفتها.',
+        action: 'احجز الان',
+        goTo:'#appointment'
+    
+    },
+    {
+        icon: `<img class ="img-fluid p-4" src="img/children.png">`,
+        title: 'طب اسنان الاطفال',
+        description: ' تقديم خدمات وقائية وعلاجية لأسنان الأطفال مع مراعاة احتياجاتهم النفسية، بما في ذلك علاج التسوس والتوجيه للعناية بالأسنان.',
+        action: 'احجز الان',
+        goTo:'#appointment'
+    
     }
-  ];
+];
 
   const servicesGrid = document.getElementById('servicesGrid');
 
