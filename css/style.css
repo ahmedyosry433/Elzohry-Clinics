@@ -155,6 +155,9 @@
 
 .carousel-item {
   height: 75rem; }
+  @media only screen and (max-width: 37.5em) {
+    .carousel-item {
+      height: 50vh; } }
 
 .img-slide {
   object-fit: cover;
@@ -383,6 +386,15 @@
 
 .footer {
   background: linear-gradient(135deg, #0891b2 0%, #41b2cdba 50%, #3e7fde 100%); }
+
+.carousel-caption {
+  top: 30%;
+  right: 10%;
+  left: auto;
+  bottom: auto;
+  text-align: right; }
+  .carousel-caption > h1 {
+    font-size: 4rem; }
 
 :root {
   --primary-color:#1a5dc2;
