@@ -174,5 +174,33 @@ document.getElementById('appointmentForm').addEventListener('submit', function(e
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const sections = document.querySelectorAll('section');
+    
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.offsetHeight;
+            
+            // إذا كانت الـ section تظهر في viewport
+            if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+                // تحديث النص في الـ navbar ليتناسب مع القسم الحالي
+                const currentId = section.getAttribute('id');
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href').substring(1) === currentId) {
+                        link.classList.add('active'); // إضافة class active
+                    } else {
+                        link.classList.remove('active'); // إزالة class active من الروابط الأخرى
+                    }
+                });
+            }
+        });
+    });
+});
+
+
 
 
