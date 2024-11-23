@@ -196,6 +196,7 @@
 .review-card {
     max-width: 50rem;
     transition: transform 0.4s ease-in-out;
+    min-height: 28rem;
    &:hover {
         transform: translateY(-5px);
     }
