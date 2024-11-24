@@ -192,7 +192,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 navLinks.forEach(link => {
                     if (link.getAttribute('href').substring(1) === currentId) {
                         link.classList.add('active'); // إضافة class active
-                        
                     } else {
                         link.classList.remove('active'); // إزالة class active من الروابط الأخرى
                     
