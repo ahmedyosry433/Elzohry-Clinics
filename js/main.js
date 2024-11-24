@@ -23,7 +23,7 @@ const services = [
         title: 'تبييض اسنان ',
         description: ' إجراء تجميلي يُستخدم لإزالة التصبغات واستعادة اللون الطبيعي أو تحسين بياض الأسنان باستخدام تقنيات متقدمة.',
         action: 'اتصل الآن',
-        goTo:'tel:+201017394834'
+        goTo:'tel:+201000011440'
     },
     {
         icon:`<img class ="img-fluid p-4" src="img/implant.png">`,
@@ -39,7 +39,7 @@ const services = [
         title: 'تقويم الأسنان',
         description: 'يُستخدم لتصحيح اعوجاج الأسنان ومشاكل الإطباق من خلال أجهزة ثابتة أو متحركة، لتحسين مظهر الأسنان ووظيفتها.',
         action: 'استشارة مجانية',
-        goTo:'tel:+201017394834'
+        goTo:'tel:+201000011440'
     },
     {
         icon: `<img class ="img-fluid p-4" src="img/tagmil.png">`,
