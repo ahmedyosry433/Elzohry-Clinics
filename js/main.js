@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     
     window.addEventListener('scroll', function () {
-        const scrollPosition = window.scrollY + window.innerHeight;
+        const scrollPosition = window.scrollY + window.innerHeight - 700;
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -192,9 +192,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 navLinks.forEach(link => {
                     if (link.getAttribute('href').substring(1) === currentId) {
                         link.classList.add('active'); // إضافة class active
+                        
                     } else {
                         link.classList.remove('active'); // إزالة class active من الروابط الأخرى
+                    
                     }
+                    
                 });
             }
         });
