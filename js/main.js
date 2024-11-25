@@ -206,3 +206,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwzEqIcDdTF9lEuBvm6k_ANdTnmxURUoxAJi1d8mcoBFp4FjdfU_oEugXlloODHmqHe/exec';
+const form = document.getElementById('appointmentForm');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    try {
+        let response = await fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form),
+        });
+        if (response.ok) {
+            alert('تم الحجز بنجاح سوف يتم التواصل معكم قريباً لتأكيد الموعد')
+            form.reset();
+        } else {
+            alert(' نأسف , حدث خطأ الرجاء التواصل برقم الفرع')
+        }
+    } catch (error) {
+        console.log(error);
+        alert(' نأسف , حدث خطأ في الاتصال الرجاء التواصل برقم الفرع')
+
+    }
+});
