@@ -150,9 +150,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//Appointment Form
 
-
+//scroll to bottom change navbar buttons
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const sections = document.querySelectorAll('section');
@@ -182,10 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
-
+//Appointment Form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwPFl0yjP3XUT2SFRtbGDBZpS1ygY-jatdWFAYlft3Zu45MRsmiKPSf1SuxIgqkiyhr/exec';
 const form = document.getElementById('appointmentForm');
 
