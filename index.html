@@ -478,42 +478,47 @@
                     <div class="col-md-4 col-lg-4 ms-lg-5">
 
                         <div class="appointment-form-container rounded-5 shadow bg-white p-5">
-                            <form id="appointmentForm" onsubmit="return false;">
+                            <form id="appointmentForm">
 
                                 <div class="form-group mb-4 ">
                                     <label class="form-label d-block mb-2 fw-normal text-black fs-5 fw-bold">الاسم<span
                                             class="required">*</span></label>
-                                    <input type="text" class="form-input w-100  pt-3 pb-3 ps-3 pe-3 rounded fs-5"
-                                        name="name" required placeholder="أدخل اسمك الكامل">
+                                    <input id="name" type="text"
+                                        class="form-input w-100  pt-3 pb-3 ps-3 pe-3 rounded fs-5" name="name" required
+                                        placeholder="أدخل اسمك الكامل">
                                 </div>
 
                                 <div class="form-group mb-4">
                                     <label class="form-label d-block mb-2 fw-normal text-black fs-5 fw-bold">رقم
                                         الهاتف<span class="required">*</span></label>
-                                    <input type="tel" class="form-input w-100  pt-3 pb-3 ps-3 pe-3 rounded fs-5"
-                                        name="phone" required placeholder="أدخل رقم هاتفك">
+                                    <input id="phone" type="tel"
+                                        class="form-input w-100  pt-3 pb-3 ps-3 pe-3 rounded fs-5" name="phone" required
+                                        placeholder="أدخل رقم هاتفك">
                                 </div>
 
 
                                 <div class="form-group mb-4">
                                     <label class="form-label d-block mb-2 fw-normal text-black fs-5 fw-bold">المسمى
                                         الوظيفي<span class="required">*</span></label>
-                                    <input type="text" class="form-input  w-100 pt-3 pb-3 ps-3 pe-3 rounded fs-5"
-                                        name="job" required placeholder="أدخل مسماك الوظيفي">
+                                    <input id="job" type="text"
+                                        class="form-input  w-100 pt-3 pb-3 ps-3 pe-3 rounded fs-5" name="job" required
+                                        placeholder="أدخل مسماك الوظيفي">
                                 </div>
 
                                 <div class="form-group mb-4">
                                     <label class="form-label d-block mb-2 fw-normal text-black fs-5 fw-bold">العمر<span
                                             class="required">*</span></label>
-                                    <input type="number" class="form-input w-100 pt-3 pb-3 ps-3 pe-3 rounded fs-5"
-                                        name="age" required placeholder="أدخل عمرك" min="18" max="120">
+                                    <input id="age" type="number"
+                                        class="form-input w-100 pt-3 pb-3 ps-3 pe-3 rounded fs-5" name="age" required
+                                        placeholder="أدخل عمرك" min="18" max="120">
                                 </div>
 
                                 <div class="form-group mb-4">
                                     <label class="form-label d-block mb-2 fw-normal text-black fs-5 fw-bold">تفاصيل
                                         الشكوى</label>
-                                    <textarea class="form-input w-100 pt-3 pb-3 ps-3 pe-3 rounded fs-5 form-textarea"
-                                        name="complaint" placeholder="يرجى وصف شكواك بالتفصيل"></textarea>
+                                    <textarea id="description"
+                                        class="form-input w-100 pt-3 pb-3 ps-3 pe-3 rounded fs-5 form-textarea"
+                                        name="description" placeholder="يرجى وصف شكواك بالتفصيل"></textarea>
                                 </div>
                                 <button type="submit"
                                     class="form-submit rounded fs-4 text-light border border-0  ps-5 pe-5 w-100 pt-3 pb-3 text-white">إرسال

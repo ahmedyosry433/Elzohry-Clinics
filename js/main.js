@@ -151,27 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Appointment Form
-document.getElementById('appointmentForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    let isValid = true;
-    const inputs = this.querySelectorAll('input[required], textarea[required]');
-    
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            input.classList.add('error');
-            isValid = false;
-        } else {
-            input.classList.remove('error');
-        }
-    });
-
-    if (isValid) {
-        console.log('تم إرسال النموذج بنجاح');
-        alert('شكراً لك! تم إرسال طلب موعدك بنجاح.');
-        this.reset();
-    }
-});
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -207,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwzEqIcDdTF9lEuBvm6k_ANdTnmxURUoxAJi1d8mcoBFp4FjdfU_oEugXlloODHmqHe/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwPFl0yjP3XUT2SFRtbGDBZpS1ygY-jatdWFAYlft3Zu45MRsmiKPSf1SuxIgqkiyhr/exec';
 const form = document.getElementById('appointmentForm');
 
 form.addEventListener('submit', async (e) => {
